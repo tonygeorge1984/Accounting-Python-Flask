@@ -8,5 +8,10 @@ app = Flask(__name__)
 def home():
     return "<h1>Welcome to Accounting Page</h1>"
 
+
+@app.route("/about")
+def home():
+    return "<h1>Welcome to About Page</h1>"
+
 if __name__ == "__main__":
     app.run(debug=True)
